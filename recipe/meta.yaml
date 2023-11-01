@@ -1,5 +1,5 @@
 {% set name = "facit" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/facit-{{ version }}.tar.gz
-  sha256: 79e3f7b23be454ecc3f559104cab1735c97f3b897c1f9a6c4fa96dcfda0f46c9
+  sha256: a711ad950268b608b555bfa2c197745edf83dd2dd89d81048ccb345996b46885
 
 build:
   noarch: python
@@ -22,10 +22,12 @@ requirements:
     - pip
   run:
     - python >=3.9
+    - deepdiff
     - jsonpickle
     - openmdao
     - numpy
     - pandas
+    - pydoe2
     - pydantic
     - xarray
     - zarr
