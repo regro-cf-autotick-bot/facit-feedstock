@@ -22,10 +22,12 @@ requirements:
     - pip
   run:
     - python >=3.9
+    - deepdiff
     - jsonpickle
     - openmdao
     - numpy
     - pandas
+    - pydoe2
     - pydantic
     - xarray
     - zarr
